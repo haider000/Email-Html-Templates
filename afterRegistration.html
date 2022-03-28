@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Devsnest</title>
+
+    <style>
+      /* A simple css reset */
+      body,
+      table,
+      thead,
+      tbody,
+      tr,
+      td,
+      img {
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        vertical-align: top;
+        color: white;
+      }
+
+      /* Add some padding for small screens */
+      .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .two-col {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nested-two-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 300px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        font-family: "IBM Plex Sans", "sans-serif";
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: "IBM Plex Sans", "sans-serif";
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #e4e4e7;
+      }
+
+      a,
+      li {
+        font-family: "IBM Plex Sans", "sans-serif";
+      }
+
+      @media only screen and (max-width: 620px) {
+        .wrapper .section {
+          width: 100%;
+        }
+
+        .wrapper .column {
+          width: 100%;
+          display: block;
+        }
+
+        .two-col {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .nested-two-col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          max-width: 350px;
+          margin: 30px auto;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <td class="wrapper" width="600" align="center">
+            <!-- Header image -->
+            <table
+              class="section header"
+              style="background-color: #27272a"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <tr>
+                <td
+                  class="column"
+                  style="display: flex; justify-content: center"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 36px 6px;
+                          "
+                        >
+                          <img
+                            src="https://devsnest-custom-images.s3.ap-south-1.amazonaws.com/cta_devsnest_logo"
+                            alt="logo"
+                          />
+
+                          <h2 style="margin-left: 20px; font-size: 3rem">
+                            Devsnest
+                          </h2>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!--Welcome Section-->
+            <table
+              class="section header"
+              style="background-color: black"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <tr>
+                <td
+                  class="column"
+                  style="display: flex; justify-content: center"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            padding: 0px 24px;
+                            max-width: 420px;
+                            text-align: center;
+                            margin-bottom: 8px;
+                          "
+                        >
+                        Devsnest is a peer-peer learning platform that makes you an industry ready Full stack developer within 7 months.
+                        We are excited to announce our new zero-cost  Full Stack Development course registrations are finally open.
+                        
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!--Get Started Section-->
+            <table
+              class="section header"
+              style="background-color: black"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <tr>
+                <td
+                  class="column"
+                  style="display: flex; justify-content: center"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            text-align: center;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            padding: 44px 2px 24px 2px;
+                          "
+                        >
+                          <button
+                            style="
+                              margin-top: 12px;
+                              padding: 10px 34px;
+                              border-radius: 6px;
+                              border: none;
+                              outline: none;
+                              background-color: #4f46e5;
+                            "
+                          >
+                            <!-- link will go here -->
+                            <a
+                              href="devsnest.in"
+                              style="
+                                color: white;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 1.15rem;
+                              "
+                              >Apply Now</a
+                            >
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!--Join Community Section-->
+            <table
+              class="section header"
+              style="background-color: black"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <tr>
+                <td
+                  class="column"
+                  style="display: flex; justify-content: center"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            text-align: center;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            padding: 44px 2px 24px 2px;
+                          "
+                        >
+                          <h2 style="line-height: 0.9">About Course</h2>
+                          <p>
+                            Be a part of our new zero-cost online Full Stack Development course for 7 months where you can have the best learning experience with amazing mentors and a collaborative learning environment with like-minded people.
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+             <!--companies logo-->
+             <table
+             class="section header"
+             style="background-color: black"
+             cellpadding="0"
+             cellspacing="0"
+             width="600"
+           >
+             <tr>
+               <td
+                 class="column"
+                 style="
+                   display: flex;
+                   justify-content: center;
+                   margin-top: 14px;
+                 "
+               >
+                 <table>
+                   <tbody>
+                     <tr>
+                       <td
+                         style="
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           padding: 12px 6px;
+                         "
+                       >
+                         <img
+                         src="https://devsnest-custom-images.s3.ap-south-1.amazonaws.com/student_placed_in_companies"
+                           alt="logo"
+                         />
+                       </td>
+                     </tr>
+                   </tbody>
+                 </table>
+               </td>
+             </tr>
+           </table>
+
+            
+
+            <!--Solve Button Section-->
+            <table
+              class="section header"
+              style="background-color: black"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <tr>
+                <td
+                  class="column"
+                  style="display: flex; justify-content: center"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            text-align: center;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            padding: 44px 2px 24px 2px;
+                          "
+                        >
+                          <button
+                            style="
+                              margin-top: 12px;
+                              padding: 10px 34px;
+                              border-radius: 6px;
+                              border: none;
+                              outline: none;
+                              background-color: #4f46e5;
+                            "
+                          >
+                            <!-- link will go here -->
+                            <a
+                              href="devsnest.in"
+                              style="
+                                color: white;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 1.15rem;
+                              "
+                              >Apply Now</a
+                            >
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!--footer-->
+            <table
+              class="section header"
+              style="background-color: #27272a"
+              cellpadding="0"
+              cellspacing="0"
+              width="600"
+            >
+              <tr>
+                <td
+                  class="column"
+                  style="display: flex; justify-content: center"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 36px 6px;
+                          "
+                        >
+                          <div
+                            style="
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: center;
+                              align-items: center;
+                              padding: 5px 6px;
+                            "
+                          >
+                            <img
+                              src="https://devsnest-custom-images.s3.ap-south-1.amazonaws.com/cta_devsnest_logo"
+                              alt="logo"
+                              style="width: 32px; height: 38px"
+                            />
+
+                            <h2
+                              style="
+                                margin-left: 10px;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                              "
+                            >
+                              Devsnest
+                            </h2>
+                          </div>
+
+                          <div
+                            style="
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              align-items: center;
+                              margin: 10px 0 6px 0;
+                            "
+                          >
+                            <a href="" style="display: block; margin: 0 10px">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M15.189 7.77471C14.815 7.69991 14.3099 7.64403 13.9922 7.64403C13.132 7.64403 13.0761 8.01802 13.0761 8.61642V9.68167H15.2264L15.039 11.8883H13.0761V18.6H10.3838V11.8883H9V9.68167H10.3838V8.31678C10.3838 6.44722 11.2625 5.40002 13.4686 5.40002C14.2351 5.40002 14.7961 5.51222 15.5252 5.66182L15.189 7.77471Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </a>
+
+                            <a href="" style="display: block; margin: 0 10px">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M19.1969 7.38519C18.6675 7.62037 18.0977 7.77876 17.5002 7.85027C18.1102 7.48454 18.5787 6.9057 18.799 6.21598C18.2288 6.55484 17.5957 6.80011 16.9233 6.93306C16.3843 6.35902 15.6158 6 14.7668 6C13.1354 6 11.8126 7.32279 11.8126 8.9542C11.8126 9.18555 11.839 9.41113 11.8894 9.6276C9.43385 9.50473 7.25719 8.32832 5.80001 6.54092C5.54563 6.97721 5.40019 7.48454 5.40019 8.02595C5.40019 9.05068 5.92096 9.95494 6.71435 10.4848C6.22958 10.4695 5.77457 10.3365 5.37572 10.1152V10.1522C5.37572 11.5839 6.39469 12.7776 7.74532 13.0498C7.49765 13.117 7.23655 13.1534 6.96729 13.1534C6.77674 13.1534 6.59147 13.1347 6.41101 13.1002C6.78682 14.2737 7.87827 15.128 9.17082 15.152C8.16001 15.944 6.88617 16.4167 5.50195 16.4167C5.26292 16.4167 5.02774 16.4028 4.79688 16.375C6.10431 17.213 7.657 17.7026 9.32537 17.7026C14.7591 17.7026 17.7306 13.201 17.7306 9.29738C17.7306 9.16923 17.7282 9.04156 17.7219 8.91533C18.2998 8.49776 18.8009 7.97747 19.1969 7.38519Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </a>
+
+                            <a href="" style="display: block; margin: 0 10px">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M8.86485 6.17038C8.86485 6.91743 8.29603 7.52201 7.40649 7.52201C6.55161 7.52201 5.98279 6.91743 6.0004 6.17038C5.98279 5.38702 6.5516 4.80005 7.42353 4.80005C8.29602 4.80005 8.8478 5.38702 8.86485 6.17038ZM6.07192 17.2915V8.58978H8.77627V17.2909H6.07192V17.2915Z"
+                                  fill="white"
+                                />
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M10.9465 11.3668C10.9465 10.2814 10.9108 9.35613 10.875 8.59092H13.224L13.3489 9.78302H13.4022C13.7582 9.23125 14.6477 8.39563 16.089 8.39563C17.8681 8.39563 19.2026 9.57012 19.2026 12.1315V17.2926H16.4983V12.4703C16.4983 11.3486 16.1071 10.584 15.1285 10.584C14.3809 10.584 13.9364 11.1 13.7587 11.5978C13.6872 11.7761 13.652 12.0247 13.652 12.2745V17.2926H10.9476V11.3668H10.9465Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </a>
+
+                            <a href="" style="display: block; margin: 0 10px">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M12.0008 6.09734C13.9233 6.09734 14.151 6.10468 14.9102 6.13932C15.6122 6.17133 15.9934 6.28863 16.2471 6.38723C16.5832 6.51784 16.8231 6.67386 17.075 6.9258C17.327 7.17776 17.483 7.41761 17.6136 7.75368C17.7122 8.00739 17.8295 8.38863 17.8615 9.09062C17.8961 9.84982 17.9035 10.0776 17.9035 12C17.9035 13.9225 17.8961 14.1502 17.8615 14.9094C17.8295 15.6114 17.7122 15.9927 17.6136 16.2464C17.483 16.5824 17.327 16.8223 17.075 17.0742C16.8231 17.3262 16.5832 17.4822 16.2471 17.6128C15.9934 17.7114 15.6122 17.8287 14.9102 17.8607C14.1511 17.8954 13.9234 17.9027 12.0008 17.9027C10.0782 17.9027 9.85049 17.8954 9.09136 17.8607C8.38937 17.8287 8.00814 17.7114 7.75443 17.6128C7.41835 17.4822 7.1785 17.3262 6.92657 17.0742C6.67463 16.8223 6.51858 16.5824 6.38797 16.2464C6.28937 15.9927 6.17207 15.6114 6.14006 14.9094C6.10542 14.1502 6.09808 13.9225 6.09808 12C6.09808 10.0776 6.10542 9.84982 6.14006 9.09062C6.17207 8.38863 6.28937 8.00739 6.38797 7.75368C6.51858 7.41761 6.6746 7.17776 6.92657 6.92583C7.1785 6.67386 7.41835 6.51784 7.75443 6.38723C8.00814 6.28863 8.38937 6.17133 9.09136 6.13932C9.85057 6.10468 10.0783 6.09734 12.0008 6.09734ZM12.0008 4.80005C10.0454 4.80005 9.80019 4.80834 9.03223 4.84338C8.26587 4.87833 7.74248 5.00005 7.28451 5.17802C6.81104 5.36202 6.40952 5.60822 6.00922 6.00848C5.60895 6.40878 5.36276 6.8103 5.17879 7.28377C5.00079 7.74174 4.87906 8.26513 4.84411 9.03148C4.80907 9.79944 4.80078 10.0446 4.80078 12C4.80078 13.9554 4.80907 14.2006 4.84411 14.9686C4.87906 15.7349 5.00079 16.2583 5.17879 16.7163C5.36276 17.1897 5.60895 17.5913 6.00922 17.9916C6.40952 18.3918 6.81104 18.638 7.28451 18.822C7.74248 19 8.26587 19.1217 9.03223 19.1567C9.80019 19.1917 10.0454 19.2 12.0008 19.2C13.9562 19.2 14.2014 19.1917 14.9693 19.1567C15.7357 19.1217 16.2591 19 16.7171 18.822C17.1905 18.638 17.592 18.3918 17.9923 17.9916C18.3926 17.5913 18.6388 17.1897 18.8228 16.7163C19.0008 16.2583 19.1225 15.7349 19.1575 14.9686C19.1925 14.2006 19.2008 13.9554 19.2008 12C19.2008 10.0446 19.1925 9.79944 19.1575 9.03148C19.1225 8.26513 19.0008 7.74174 18.8228 7.28377C18.6388 6.8103 18.3926 6.40878 17.9923 6.00848C17.592 5.60822 17.1905 5.36202 16.7171 5.17802C16.2591 5.00005 15.7357 4.87833 14.9693 4.84338C14.2014 4.80834 13.9562 4.80005 12.0008 4.80005Z"
+                                  fill="white"
+                                />
+                                <path
+                                  d="M12.002 8.30615C9.96001 8.30615 8.30469 9.96147 8.30469 12.0034C8.30469 14.0454 9.96001 15.7007 12.002 15.7007C14.044 15.7007 15.6993 14.0454 15.6993 12.0034C15.6993 9.96147 14.044 8.30615 12.002 8.30615ZM12.002 14.4034C10.6765 14.4034 9.60198 13.3289 9.60198 12.0034C9.60198 10.678 10.6765 9.60344 12.002 9.60344C13.3275 9.60344 14.402 10.678 14.402 12.0034C14.402 13.3289 13.3275 14.4034 12.002 14.4034Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </a>
+                          </div>
+
+                          <p style="margin-top: 12px">
+                            Copyright © 2022
+                            <a href="" style="color: #4f46e5">Devsnest.in</a> .
+                            All Rights Reserved
+                          </p>
+
+                          <p style="text-align: center; font-size: 0.825rem">
+                            You Are getting this mail because your e-mail ID. Is
+                            registered with us. To Stop Receiving These mails
+                            click-
+                            <a href="" style="color: #e4e4e7"> Unsubscribe </a>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
